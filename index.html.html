@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <title>deng tab，简洁无尽</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/js/bootstrap.bundle.min.js"></script>
+  <script src="deng tab.js"></script>
+</head>
+<body style="background-image: url(https://www.yangshangzhen.com/bing/wallpaper">
+	<script>
+    var t = null;
+    t = setTimeout(time,1000);//開始运行
+    function time()
+    {
+        clearTimeout(t);//清除定时器
+        dt = new Date();
+        var h=dt.getHours();//获取时
+        var m=dt.getMinutes();//获取分
+        document.getElementById("showTime").innerHTML =h+":"+m;
+        t = setTimeout(time,1000); //设定定时器，循环运行
+    }
+
+	function search() {
+    if (document.getElementById("search_input").value != "") {
+        window.location.href = "https://www.baidu.com/s?wd=" + document.getElementById("search_input").value;
+        document.getElementById("search_input").value = "";
+    }
+    return false;
+
+	WIDGET = {
+  "CONFIG": {
+    "modules": "01234",
+    "background": "2",
+    "tmpColor": "000000",
+    "tmpSize": "16",
+    "cityColor": "000000",
+    "citySize": "16",
+    "aqiColor": "000000",
+    "aqiSize": "16",
+    "weatherIconSize": "24",
+    "alertIconSize": "18",
+    "padding": "10px 10px 10px 10px",
+    "shadow": "0",
+    "language": "auto",
+    "borderRadius": "15",
+    "fixed": "false",
+    "vertical": "top",
+    "horizontal": "left",
+    "key": "ebcc0b3fc573418eacf492a260286a0a"
+	  (function (d) {
+    var c = d.createElement('link')
+    c.rel = 'stylesheet'
+    c.href = 'https://widget.qweather.net/simple/static/css/he-simple.css?v=1.4.0'
+    var s = d.createElement('script')
+    s.src = 'https://widget.qweather.net/simple/static/js/he-simple.js?v=1.4.0'
+    var sn = d.getElementsByTagName('script')[0]
+    sn.parentNode.insertBefore(c, sn)
+    sn.parentNode.insertBefore(s, sn)
+})(document)
+  }
+}
+}
+</script>
+
+
+<div class="time" style="display:flex;margin:20px;font-size:30px;width:100;-moz-border-radius: 5px;border-radius: 5px;align-items:center">
+    <h1 class="display-5" style="margin:15px"><label id="showTime"></label></h1>
+</div>
+
+<div class="kj" style="display: flex;margin:35px;text-align:center">
+    <form onsubmit="return search()">
+        <input type=text class="ssk" autocomplete="off" autofocus id="search_input">
+        <button class="anniu" onclick="return search()">search</button>
+    </form>
+</div>
+<div id="he-plugin-simple"></div>
+<script>
+
+</script>
+<script src="https://widget.qweather.net/simple/static/js/he-simple-common.js?v=2.0"></scr
+
